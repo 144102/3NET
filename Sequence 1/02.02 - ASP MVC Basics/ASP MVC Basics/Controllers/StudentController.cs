@@ -14,7 +14,6 @@ namespace ASP_MVC_Basics.Controllers
 
         public ActionResult Index()
         {
-
             return View();
         }
 
@@ -28,7 +27,7 @@ namespace ASP_MVC_Basics.Controllers
                 HasPaid = false,
                 Class = 1
             };
-            return View("Detail", "_Layout", model);
+            return View("Details", "_Layout", model);
         }
 
     }
