@@ -1,4 +1,4 @@
-﻿@model ASP_MVC_Basics.Models.Student
+﻿@model ASP_MVC_Basics.Models.StudentDetailsViewModel
 
 @{
     ViewBag.Title = "Details";
@@ -9,46 +9,47 @@
 }
 
 
-
+@*<p>@ViewBag.SchoolName</p>
+<p>@ViewBag.Student.Name</p>*@
 <fieldset>
     <legend>Student</legend>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Name)
+         @Html.DisplayNameFor(model => model.MyStudent.Name)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Name)
+        @Html.DisplayFor(model => model.MyStudent.Name)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Email)
+         @Html.DisplayNameFor(model => model.MyStudent.Email)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Email)
+        @Html.DisplayFor(model => model.MyStudent.Email)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Class)
+         @Html.DisplayNameFor(model => model.MyStudent.Class)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Class)
+        @Html.DisplayFor(model => model.MyStudent.Class)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.JoinDate)
+         @Html.DisplayNameFor(model => model.MyStudent.JoinDate)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.JoinDate)
+        @Html.DisplayFor(model => model.MyStudent.JoinDate)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.HasPaid)
+         @Html.DisplayNameFor(model => model.MyStudent.HasPaid)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.HasPaid)
+        @Html.DisplayFor(model => model.MyStudent.HasPaid)
     </div>
 </fieldset>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MyStudent.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

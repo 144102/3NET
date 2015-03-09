@@ -27,7 +27,13 @@ namespace ASP_MVC_Basics.Controllers
                 HasPaid = false,
                 Class = 1
             };
-            return View("Details", "_Layout", model);
+//ViewBag.SchoolName  ="Supinfo";
+//ViewBag.Student = model;
+var viewModel = new StudentDetailsViewModel{
+    MyStudent = model,
+SchoolName = "Sûpinfo"
+};
+            return View("Details", "_Layout", viewModel);
         }
 
     }
