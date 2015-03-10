@@ -194,10 +194,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Images\Models\AccountModels.cs" />
-    <Compile Include="Images\Models\Student.cs" />
-    <Compile Include="Images\Models\StudentCreateViewModel.cs" />
-    <Compile Include="Images\Models\StudentDetailsViewModel.cs" />
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\StudentCreateViewModel.cs" />
+    <Compile Include="Models\StudentDetailsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -315,6 +315,7 @@
     <Content Include="Views\Student\Details.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Student\Create.cshtml" />
+    <Content Include="Views\Shared\DashBoard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

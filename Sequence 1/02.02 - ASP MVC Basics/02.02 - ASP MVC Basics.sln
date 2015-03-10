@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP_MVC_Basics", "ASP MVC Basics\ASP_MVC_Basics.csproj", "{D5C5F16D-D10A-4595-B996-59B54F63960C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP Code First Specificities", "ASP Code First Specificities\ASP Code First Specificities.csproj", "{397F1E1F-3362-4B6D-9A05-280C3E375119}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D5C5F16D-D10A-4595-B996-59B54F63960C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5C5F16D-D10A-4595-B996-59B54F63960C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5C5F16D-D10A-4595-B996-59B54F63960C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397F1E1F-3362-4B6D-9A05-280C3E375119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397F1E1F-3362-4B6D-9A05-280C3E375119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397F1E1F-3362-4B6D-9A05-280C3E375119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397F1E1F-3362-4B6D-9A05-280C3E375119}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

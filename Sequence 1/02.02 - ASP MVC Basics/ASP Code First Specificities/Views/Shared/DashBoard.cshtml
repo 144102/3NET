@@ -1,0 +1,19 @@
+﻿@model ASP_Code_First_Specificities.Models.DashBoardViewModel
+@{
+    ViewBag.Title = "DashBoard";
+}
+
+<h2>DashBoard</h2>
+
+@{
+    foreach (var school in Model.Schools)
+    {
+        <h3>School's Name : @school.Name</h3>
+ 
+        foreach (var student in school.Students)
+        {
+            <tr>Student Name : @student.Name</tr>
+        }
+
+    }
+}
