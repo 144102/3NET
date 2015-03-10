@@ -1,5 +1,7 @@
-﻿using System;
+﻿using ASP_MVC_Basics.Contexts;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -23,6 +25,10 @@ namespace ASP_MVC_Basics
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+
+            
+ 
+
         }
     }
 }

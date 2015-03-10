@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ASP_MVC_Basics.Contexts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,12 @@ namespace ASP_MVC_Basics.Controllers
     {
         public ActionResult Index()
         {
+
+            using (var context = new AppContext())
+            {
+             var temp = context.Students.ToList();
+            }
+
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
             return View();
