@@ -19,7 +19,7 @@ namespace ASP_MVC_Basics.Controllers
 
         public ActionResult Details()
         {
-            var model = new Student(){
+            var model = TempData["StudentCreated"]!=null ? TempData["StudentCreated"] as Student :new Student(){
                 ID = 1,
                 Name ="Pierre Martin",
                 JoinDate = DateTime.Now,
@@ -27,13 +27,33 @@ namespace ASP_MVC_Basics.Controllers
                 HasPaid = false,
                 Class = 1
             };
-//ViewBag.SchoolName  ="Supinfo";
-//ViewBag.Student = model;
-var viewModel = new StudentDetailsViewModel{
-    MyStudent = model,
-SchoolName = "Sûpinfo"
-};
+            //ViewBag.SchoolName  ="Supinfo";
+            //ViewBag.Student = model;
+            var viewModel = new StudentDetailsViewModel{
+                MyStudent = model,
+                SchoolName = "Supinfo"
+            };
             return View("Details", "_Layout", viewModel);
+        }
+
+
+        public ActionResult Create()
+        {
+            return View(new StudentCreateViewModel());
+        }
+
+       
+        public ActionResult Create(StudentCreateViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                TempData["StudentCreated"] = model.student;
+                return RedirectToAction("Details");
+            }
+            else
+            {                
+                return View(model);
+            }
         }
 
     }

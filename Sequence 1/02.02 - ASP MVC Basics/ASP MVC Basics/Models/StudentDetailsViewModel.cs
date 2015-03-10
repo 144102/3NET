@@ -12,7 +12,7 @@ namespace ASP_MVC_Basics.Models
 
         public StudentDetailsViewModel()
         {
-
+            
         }
     }
 }
